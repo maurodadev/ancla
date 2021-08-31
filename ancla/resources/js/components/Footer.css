@@ -1,0 +1,50 @@
+footer {
+    background-color: transparent;
+    padding: 15px 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+
+footer nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+footer nav ul li {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+i {
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    -webkit-transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+    -ms-transition: ease-in-out 0.3s;
+    -o-transition: ease-in-out 0.3s;
+}
+
+i.fa-facebook-f:hover {color: #1877f2;}
+i.fa-youtube:hover {color: #ff0000;}
+i.fa-instagram:hover {color: #c32aa3;}
+i.fa-whatsapp:hover {color: #25d366;}
+i.fa-tiktok:hover {color: #69c9d0;}
+i.fa-twitter:hover {color: #1da1f2;}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 600px) {
+    footer {
+        padding: 15px 0px;
+    }
+    footer nav ul li {
+        padding: 0 15px;
+    }
+}

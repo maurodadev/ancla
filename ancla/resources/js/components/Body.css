@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+
+/* HOME */
+
+.home {
+    padding-top: 20px;
+}
+
+.container { 
+    padding: 1rem;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.collabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.collabs img {
+    width: 300px;
+    height: auto;
+    border: 2px solid blueviolet;
+}
+
+.collabs-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.flex-reverse {
+    flex-direction: row-reverse;
+}
+
+#img-lezioni {
+    width: 640px;
+    height: auto;
+    border: 2px solid blueviolet;
+    margin-bottom: 20px;
+}
+
+.homepage {
+    flex-direction: row;
+}
+
+.home__img {
+    width:400px;
+    max-width: 50%;
+    vertical-align: middle;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+
+.home__title {
+    max-width: 50%;
+    font-family: 'Merienda', cursive;
+    padding-left: 20px;
+    font-size: 2.5rem;
+    cursor: default;
+    vertical-align: middle;
+}
+
+/* BIO */
+
+.bio, .lezioni {
+    align-items: center;
+}
+
+p {
+    display: inline-block;
+    max-width: 1200px;
+    text-align: justify;
+}
+
+/* PUBBLICAZIONI */
+
+.book {
+    width: 400px;
+    border: blueviolet 1px solid;
+    margin: 40px 0;
+}
+
+/* MEDIA QUERIES */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .home__title {
+        font-size: 1em;
+    }
+
+    .book {
+        width: 200px;
+    }
+    
+    .collabs {
+        flex-direction: column-reverse;
+    }
+
+    .flex-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .collabs-text {
+        padding: 20px 0;
+    }
+
+    #img-lezioni {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    p { max-width: 480px; }
+    .home__title {
+        font-size: 1rem;
+    }
+    .collabs {
+        flex-direction: column-reverse;
+    }
+
+    .flex-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .collabs-text {
+        padding: 20px 0;
+    }
+
+    #img-lezioni {
+        width: 600px;
+        height: auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    p { max-width: 640px; }
+    .home__title {
+        font-size: 1.2rem;
+    }
+    .collabs {
+        flex-direction: unset;
+    }
+
+    .flex-reverse {
+        flex-direction: row-reverse;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .home__title {
+        font-size: 1.5rem;
+    }
+    p { max-width: 800px; }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    p { max-width: 992px; }
+    .home__title {
+        font-size: 2rem;
+    }
+}

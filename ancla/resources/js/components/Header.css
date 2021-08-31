@@ -1,0 +1,113 @@
+.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar a, .topnav .menu-icon i {
+    transition: ease-in-out 0.3s;
+    -webkit-transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+    -ms-transition: ease-in-out 0.3s;
+    -o-transition: ease-in-out 0.3s;
+}
+
+.navbar a:hover {
+    color: blueviolet;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    cursor: pointer;
+}
+ 
+.nav-menu li, .navbar-contact a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-menu li a:hover {
+  color: blueviolet;
+}
+
+.navbar-contact a {
+  background-color: blueviolet;
+  color: white;
+}
+
+.navbar-contact a:hover {
+  background-color: white;
+  color: black;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu-icon i {
+  color: white;
+  display: block;
+}
+
+.menu-icon i:hover {
+  color: blueviolet;
+}
+
+
+@media screen and (max-width: 767px) {
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu li {
+    display: block;
+    width: 100%;
+  }
+
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar-brand a {
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
